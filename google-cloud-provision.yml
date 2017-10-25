@@ -9,5 +9,5 @@
         image: debian-8
         state: present
         service_account_email: "{{ ansible_env.email }}"
-        credentials_file: "{{ ansible_env.MYGCLCLICONFIG_INTEGRATION_JSON_KEY}}"
+        credentials_file: "{{ ansible_env.path}}"
         project_id: "{{ ansible_env.projectId }}"
