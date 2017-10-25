@@ -8,6 +8,6 @@
         machine_type: f1-micro
         image: debian-8
         state: present
-        #service_account_email: "{{ ansible_env.MYGCLCLICONFIG_INTEGRATION_JSON_KEY | jq -r 'client_email' }}"
+        service_account_email: "{{ ansible_env.email }}"
         credentials_file: "{{ ansible_env.MYGCLCLICONFIG_INTEGRATION_JSON_KEY}}"
-        #project_id: "{{ ansible_env.MYGCLCLICONFIG_INTEGRATION_JSON_KEY | jq -r 'project_id' }}"
+        project_id: "{{ ansible_env.projectId }}"
