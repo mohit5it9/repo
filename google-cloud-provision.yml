@@ -8,6 +8,6 @@
         machine_type: f1-micro
         image: debian-8
         state: present
-        service_account_email: "{{ ansible_env.email }}"
-        credentials_file: "{{ ansible_env.int_path }}"
-        project_id: "{{ ansible_env.projectId }}"
+        service_account_email: "{{ ansible_env.SERVICEACCOUNTEMAIL }}"
+        credentials_file: "{{ ansible_env.CREDENTIALFILE_PATH }}"
+        project_id: "{{ ansible_env.PROJECTID }}"
